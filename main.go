@@ -1,15 +1,37 @@
 package main
 
 import (
+	"fmt"
+	"net/http"
+	"time"
+
 	conso "github.com/dtroncy/enedis-consumption"
 	tempo "github.com/dtroncy/tempo-calendar"
 )
 
 func main() {
 
-	tempo.GetTempoCalendar("2023-12-08T00:00:00+01:00", "2023-12-11T00:00:00+01:00")
-	conso.GetDailyConsumption("2023-12-08", "2023-12-11")
-	conso.GetConsumptionLoadCurve("2023-12-08", "2023-12-11")
-	conso.GetConsumptionMaxPower("2023-12-08", "2023-12-11")
+	http.HandleFunc("/lastdaydata", getLastDayData)
 
+	fmt.Println("Démarrage du serveur sur le port 8080 ...")
+	http.ListenAndServe(":8080", nil)
+
+}
+
+func getLastDayData(w http.ResponseWriter, r *http.Request) {
+
+	today := time.Now()
+	yesterday := today.AddDate(0, 0, -1)
+	formattedTodayDateTempo := today.Format("2006-01-02T15:04:05-07:00")
+	formattedYesterdayDateTempo := yesterday.Format("2006-01-02T15:04:05-07:00")
+	formattedTodayDateConso := today.Format("2006-01-02")
+	formattedYesterdayDateConso := yesterday.Format("2006-01-02")
+
+	tempo.GetTempoCalendar(formattedYesterdayDateTempo, formattedTodayDateTempo)
+	conso.GetDailyConsumption(formattedYesterdayDateConso, formattedTodayDateConso)
+	conso.GetConsumptionLoadCurve(formattedYesterdayDateConso, formattedTodayDateConso)
+	conso.GetConsumptionMaxPower(formattedYesterdayDateConso, formattedTodayDateConso)
+
+	w.Header().Set("Content-Type", "application/json")
+	//json.NewEncoder(w).Encode(data)
 }
