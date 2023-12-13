@@ -3,8 +3,8 @@ module github.com/dtroncy/electricitydashboard
 go 1.21.4
 
 require (
-	github.com/dtroncy/enedis-consumption v1.0.0
-	github.com/dtroncy/tempo-calendar v1.0.0
+	github.com/dtroncy/enedis-consumption v1.2.0
+	github.com/dtroncy/tempo-calendar v1.2.0
 )
 
 require (

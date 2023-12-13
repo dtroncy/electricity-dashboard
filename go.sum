@@ -1,7 +1,15 @@
 github.com/dtroncy/enedis-consumption v1.0.0 h1:3UHWySG4V91bqT7IxijBP8PHBtn27FgJlJRTVGwmcVw=
 github.com/dtroncy/enedis-consumption v1.0.0/go.mod h1:Hb7cvp9vWrEZ0Eihe6vb51Xb8TRUfBsXCjzd1Rmx00U=
+github.com/dtroncy/enedis-consumption v1.1.0 h1:qvhC171SDEzQUMhKFNNNz9IsIwTlhV9U0BsTDQ75TGE=
+github.com/dtroncy/enedis-consumption v1.1.0/go.mod h1:Hb7cvp9vWrEZ0Eihe6vb51Xb8TRUfBsXCjzd1Rmx00U=
+github.com/dtroncy/enedis-consumption v1.2.0 h1:RjagGgqe22M8U0dZXS9vE48TstgzLWEBN8MhIa4I8uA=
+github.com/dtroncy/enedis-consumption v1.2.0/go.mod h1:Hb7cvp9vWrEZ0Eihe6vb51Xb8TRUfBsXCjzd1Rmx00U=
 github.com/dtroncy/tempo-calendar v1.0.0 h1:d/DyNkdRL1Q17Dq9tgGDlAU0huo8Ip7BoCn+Pf/Ytz0=
 github.com/dtroncy/tempo-calendar v1.0.0/go.mod h1:BQlq3pNRrsKzXtvko32TYmOP1s2qxrQR1Q1S4LihaNc=
+github.com/dtroncy/tempo-calendar v1.1.0 h1:Kwk52p6YdtmmV89Pn3Kf9PS/KvAzzK7qJk0UldnpqvY=
+github.com/dtroncy/tempo-calendar v1.1.0/go.mod h1:BQlq3pNRrsKzXtvko32TYmOP1s2qxrQR1Q1S4LihaNc=
+github.com/dtroncy/tempo-calendar v1.2.0 h1:brj6+39y0IHD+hqvCiemZzGbTysfKnUY0brX1o2MGMc=
+github.com/dtroncy/tempo-calendar v1.2.0/go.mod h1:BQlq3pNRrsKzXtvko32TYmOP1s2qxrQR1Q1S4LihaNc=
 github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=
 github.com/golang/protobuf v1.5.2/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiuN0vRsmY=
 github.com/golang/protobuf v1.5.3 h1:KhyjKVUg7Usr/dYsdSqoFveMYd5ko72D+zANwlG1mmg=
